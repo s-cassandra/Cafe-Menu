@@ -14,7 +14,7 @@ h2 {
   font-size: 30px;
 }
 
-.established {
+.established { /* makes the "Est.2020" italic */
   font-style: italic;
 }
 
@@ -27,8 +27,8 @@ h1, h2, p {
   background-color: burlywood;
   margin-left: auto; /* margin-left and margin-right set to auto means that this section will be centered horizontally */
   margin-right: auto;
-  padding: 20px;
-  max-width: 500px;
+  padding: 20px; /* provides extra space on the sides (left, right, top, bottom)*/
+  max-width: 500px; /* prevents the menu section from growing too wide if the page is visited using a large screen (the items and their prices won't be too far apart) */
 }
 
 img {
@@ -48,10 +48,10 @@ hr {
 }
 
 h1, h2 {
-  font-family: Impact, serif;
+  font-family: Impact, serif; /* different font from the rest of the page, serif will be used if Impact cannot */
 }
 
-.item p {
+.item p { /* .item p The p elements are nested in an article element with the class attribute of item. All the p elements can be styled anywhere in elements with a class named item */ 
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -60,7 +60,7 @@ h1, h2 {
 
 .flavor, .dessert {
   text-align: left;
-  width: 75%;
+  width: 75%; /* determines how much room the flavor/dessert will take on the line */
 }
 
 .price {
