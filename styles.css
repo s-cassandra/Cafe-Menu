@@ -1,13 +1,13 @@
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
-  padding: 20px;
+  padding: 20px; /* creates room around the menu */
 }
 
 h1 {
   font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin-top: 0; /* removes the default space between the h1 and the top of the menu section */
+  margin-bottom: 15px; /* To remove some of the vertical space between the h1 element and the text Est. 2020 */
 }
 
 h2 {
@@ -32,19 +32,20 @@ h1, h2, p {
 }
 
 img {
-  display: block;
+  display: block; /* makes <img> behave like a block level element, such as h1 */
   margin-left: auto;
   margin-right: auto;
+  margin-top: -25px /* pulls the images up from the current positions (lessening the gap between the image and the h2 element) */
 }
 
 hr {
   height: 2px;
   background-color: brown;
-  border-color: brown;
+  border-color: brown; /* has a height of 2px (top and bottom). This must be considered when creating the height of hr */
 }
 
 .bottom-line {
-  margin-top: 25px;
+  margin-top: 25px; /* ensures that the distance between "cinnamon roll" and the second <hr> matches the distance between "coffee" and the first <hr> */
 }
 
 h1, h2 {
@@ -53,7 +54,7 @@ h1, h2 {
 
 .item p { /* .item p The p elements are nested in an article element with the class attribute of item. All the p elements can be styled anywhere in elements with a class named item */ 
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 5px; /* margin-top and margin-bottom: adjusts the items of the menu */
   margin-bottom: 5px;
   font-size: 18px;
 }
@@ -75,11 +76,11 @@ footer {
 }
 
 .address {
-  margin-bottom: 5px;
+  margin-bottom: 5px; /* reduces the spacing at the bottom to match the top */
 }
 
-a {
-  color: black;
+a { 
+  color: black; /* changes the color of the link to black */
 }
 
 a:visited {
